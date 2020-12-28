@@ -43,11 +43,10 @@ class Pepperoni(Pizza_baseline):
     def __init__(self, size):
         self.name = "Pepperoni"
         self._items_update({"mushromms": 10})
-        super().__init__(*args, size, self.name)
+        super().__init__(self._items_update, size, self.name)
                 
 class Hawaiian(Pizza_baseline):
 
     def __init__(self, size):
         self.name = "Hawaiian"
-        self._items_update({"pineapples": 100})   
-        super().__init__(*args, size, self.name)
+        self._items_update({"pineapples": 100})
