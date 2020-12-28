@@ -49,4 +49,5 @@ class Hawaiian(Pizza_baseline):
 
     def __init__(self, size):
         self.name = "Hawaiian"
-        self._items_update({"pineapples": 100})
+        self._items_update({"pineapples": 100})   
+        super().__init__(self._items_update, size, self.name)
