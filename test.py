@@ -29,7 +29,7 @@ def test_pickup():
         
 def test_delivery():
     with patch.object(random, "randint", return_value=10):
-        assert delivery() == "🛵 Доставим пиццу домой через {} мин        
+        assert delivery() == "🛵 Доставим пиццу домой через 10 мин"        
         
 def test_pizza_size_equal():
     assert Pepperoni(size="L") != Pepperoni(size="XL")
